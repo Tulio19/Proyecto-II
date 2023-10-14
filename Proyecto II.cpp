@@ -1,13 +1,19 @@
 //Codigo del programa en c++
+//Realizar una base de datos utilizando archivos.
+//Al abrir el programa debe mostrar un menú con las siguientes opciones:Agregar producto, Buscar a un producto Modificar los datos de un producto
+//Siguiendo ciertas restricciones que seran explicadas en la documentación externa.
+//Aún asi en el menú principal del programa esta la opcción 4 la cual corresponde a dichas restrecciones.
+
+//Comenzamos creando nuestra funcion princial la cual nos ayudara para abrir nuestro archivo con los productos.
 
 #include <iostream>
 #include <fstream>
 #include <windows.h>
 using namespace std;
 int menu(){
-	int x;
+	int x;//Creamos nuestra segunda funcion la cual consiste en guardar los datos en nuestro archivo
 	system("cls");
-	cout << "<<------Bienvenido------->>"<<endl<<endl;
+	cout << "<<------Bienvenido------->>"<<endl<<endl;//Ahora creamos nuestra primera opciones del menu principal.
 	cout << "1. Agregar Persona" << endl;
 	cout << "2. Ver Personas" << endl;
 	cout << "3. Buscar Personas" << endl;
