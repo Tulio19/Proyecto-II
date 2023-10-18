@@ -13,8 +13,8 @@ using namespace std;
 int menu(){
 	int x;//Creamos nuestra segunda funcion la cual consiste en guardar los datos en nuestro archivo
 	system("cls");
-	cout << "<<------Bienvenido------->>"<<endl<<endl;//Ahora creamos nuestra primera opciones del menu principal.
-	cout << "1. Agregar Persona" << endl;
+	cout << "<<Bienvenidos>>"<<endl<<endl;//Ahora creamos nuestra primera opciones del menu principal.
+	cout << "1. Agregar Personas" << endl;
 	cout << "2. Ver Personas" << endl;
 	cout << "3. Buscar Personas" << endl;
 	cout << "4. Modificar Personas" << endl;
@@ -93,7 +93,7 @@ void verRegistros(ifstream &Lec){
 	char estado;
 	float descuento;
 	Lec.open("Personas.txt", ios::in);
-	cout<<"----Personas Registradas----"<< endl<<endl;
+	cout<<"Personas Registradas"<< endl<<endl;
 	Lec>>nom;
 	while(!Lec.eof()){
 		Lec>>ced;
@@ -102,14 +102,14 @@ void verRegistros(ifstream &Lec){
 		Lec>>existencia;
 		Lec>>estado;
 		Lec>>descuento;
-		cout<<"Nombre------: "<<nom<<endl;
-		cout<<"Codigo----: "<<ced<<endl;
-		cout<<"Precio------: "<<precio<<endl;
-		cout<<"Proveedor------: "<<proveedor<<endl;
-		cout<<"Existencia----: "<<existencia<<endl;
-		cout<<"Estado------: "<<estado<<endl;
-		cout<<"Descuento------: "<<descuento<<endl;
-		cout<<"--------------"<<endl;
+		cout<<"Nombre......: "<<nom<<endl;
+		cout<<"Codigo......: "<<ced<<endl;
+		cout<<"Precio......: "<<precio<<endl;
+		cout<<"Proveedor......: "<<proveedor<<endl;
+		cout<<"Existencia.....: "<<existencia<<endl;
+		cout<<"Estado......: "<<estado<<endl;
+		cout<<"Descuento.....: "<<descuento<<endl;
+		cout<<"______________"<<endl;
 		Lec>>nom;
 	}
 	Lec.close();
@@ -135,14 +135,14 @@ void buscarPersona(ifstream &Lec){
 		Lec>>estado;
 		Lec>>descuento;    
 		if(ced == cedaux){
-			cout << "Nombre-----: "<<nom<<endl;
-			cout << "Codigo ----: "<<ced<<endl;
-			cout << "Precio ----: "<<precio<<endl;
-			cout << "Proveedor ----: "<<proveedor<<endl;
-			cout << "Existencia ----: "<<existencia<<endl;
-			cout << "Estado ----: "<<estado<<endl;
-			cout << "Descuento ----: "<<descuento<<endl;
-			cout << "----------------------"<<endl;
+			cout << "Nombre________: "<<nom<<endl;
+			cout << "Codigo _______: "<<ced<<endl;
+			cout << "Precio _______: "<<precio<<endl;
+			cout << "Proveedor ____: "<<proveedor<<endl;
+			cout << "Existencia ____: "<<existencia<<endl;
+			cout << "Estado ________: "<<estado<<endl;
+			cout << "Descuento _____: "<<descuento<<endl;
+			cout << "_____________________"<<endl;
 			encontrado = true;
 		}
 		Lec>>nom;
