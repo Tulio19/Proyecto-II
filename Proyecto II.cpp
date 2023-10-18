@@ -102,13 +102,13 @@ void verRegistros(ifstream &Lec){
 		Lec>>existencia;
 		Lec>>estado;
 		Lec>>descuento;
-		cout<<"Nombre......: "<<nom<<endl;
-		cout<<"Codigo......: "<<ced<<endl;
-		cout<<"Precio......: "<<precio<<endl;
-		cout<<"Proveedor......: "<<proveedor<<endl;
-		cout<<"Existencia.....: "<<existencia<<endl;
-		cout<<"Estado......: "<<estado<<endl;
-		cout<<"Descuento.....: "<<descuento<<endl;
+		cout<<"Nombre_______: "<<nom<<endl;
+		cout<<"Codigo_______: "<<ced<<endl;
+		cout<<"Precio________: "<<precio<<endl;
+		cout<<"Proveedor______: "<<proveedor<<endl;
+		cout<<"Existencia_____: "<<existencia<<endl;
+		cout<<"Estado_________: "<<estado<<endl;
+		cout<<"Descuento______: "<<descuento<<endl;
 		cout<<"______________"<<endl;
 		Lec>>nom;
 	}
